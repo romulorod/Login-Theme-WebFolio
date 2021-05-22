@@ -26,7 +26,7 @@ body{
     border-bottom-left-radius: 15px;
 
 
-    left:60%;
+    left:0%;
 }
 .container{
     display: flex;
@@ -36,7 +36,10 @@ body{
     background-color: #ecf0f1;
 }
 .first-container{
-    display: none;
+    display: flex;
+}
+.first-container .second-column{
+    z-index: 11;
 }
 .first-column{
     width: 40%;
@@ -72,6 +75,7 @@ body{
     text-align: center;
     line-height: 35px;
     color: #95a5a6;
+    transition: background-color .5s;
 }
 
 .social-media{
@@ -88,9 +92,11 @@ body{
 }
 .second-container .first-column{
     order:2;
+    z-index: -1;
 }
 .second-container .second-column{
     order:1;
+    z-index: -1;
 }
 .title {
     font-size: 28px;
@@ -127,6 +133,7 @@ body{
 .btn-secondary{
     background-color:#58af9b;
     border:1px solid #fff;
+    transition: background-color .5s;
 }
 .btn:hover{
     border:1px solid #58af9b;
@@ -136,6 +143,7 @@ body{
 .btn-primary{
     background-color: transparent;
     border: 1px solid #fff;
+    transition: background-color .5s;
 }
 .btn-primary:hover{
 background-color: #FFF;
@@ -165,4 +173,116 @@ width: 100%;
 }
 .password::first-letter{
     text-transform: capitalize;
+}
+
+.sign-in-js .first-container .first-column {
+z-index: -1;
+}
+
+
+.sign-in-js .second-container .second-column {
+z-index: 11;
+}
+.sign-in-js .second-container .first-column{
+    z-index:13;
+}
+
+.sign-in-js .content::before{
+    border-top-left-radius: 0px;
+    border-bottom-left-radius: 0px;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+    left: 60%;
+    animation: slidein 3s;
+    z-index:12;
+}
+.sign-up-js .content::before{
+    animation: slideout 3s;
+    z-index: 12;
+}
+.sign-up-js .second-container .first-column, 
+.sign-up-js .second-container .second-column {
+z-index: -1;
+}
+
+
+.sign-up-js .first-container .second-column {
+z-index: 11;
+}
+.sign-up-js .first-container .first-column{
+    z-index: 13;
+}
+
+.sign-in-js .first-container .second-column{
+    position: relative;
+    animation: contentSlideLeft 3s;
+    z-index: -1;
+}
+
+.sign-up-js .second-container .second-column{
+    position: relative;
+    z-index: -1;
+    animation: contentSlideRight 3s;
+}
+
+@keyframes contentSlideLeft{
+    from{
+        left:0;
+        opacity: 1;
+        z-index: 12;
+    }
+    25%{
+        left:-80px;
+        opacity: 0.5;
+    }
+    50%{
+        left:-100px;
+        opacity: 0.2;
+    }
+    to{
+        left:-110px;
+        opacity: 0;
+        z-index: -1;
+    }
+}
+@keyframes contentSlideRight{
+    from{
+        left:0;
+        opacity: 1;
+        z-index:12;
+    }
+    25%{
+        left:80px;
+        opacity: 0.5;
+    }
+    50%{
+        left:100px;
+        opacity: 0.2;
+    }
+    to{
+        left:110px;
+        opacity: 0;
+        z-index: -1;
+    }
+}
+
+@keyframes slidein{
+    from{
+        left:0;
+        width: 40%;
+    }
+    to{
+        left: 60%;
+        width: 40%;
+    }
+}
+@keyframes slideout{
+    from{
+        left:60%;
+        width: 40%;
+    }
+    to{
+        left: 0;
+        width: 40%;
+    }
 }
