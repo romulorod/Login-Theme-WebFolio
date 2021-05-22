@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,34 +8,46 @@
     <link rel="stylesheet" href="css/style.css">
     <title>Login</title>
 </head>
+
 <body>
     <div class="container">
         <div class="content first-container">
             <div class="first-column">
                 <h2 class="title title-primary">Welcome Back!</h2>
-                <p class="description">To keep connected with us</p>
-                <p class="description">Please login with your personal info</p>
+                <p class="description description-primary">To keep connected with us</p>
+                <p class="description description-primary">Please login with your personal info</p>
                 <button class="btn btn-primary">SIGN IN</button>
             </div>
             <div class="second-column">
-                <h2 class="title">Create Account</h2>
+                <h2 class="title title-secondary">Create Account</h2>
                 <div class="social-media">
                     <ul class="list-social-media">
-                        <li><a href="#">Facebook</a></li>
-                        <li><a href="#">Google Plus</a></li>
-                        <li><a href="#">LinkedIn</a></li>
+                        <li class="item-social-media"><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                        <li class="item-social-media"><a href="#"><i class="fab fa-google-plus-g"></i></a></li>
+                        <li class="item-social-media"><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
                     </ul>
-                </div> <!--end social-media-->
-                <p class="description">or use your email to register</p>
+                </div>
+                <!--end social-media-->
+                <p class="description description-second">or use your email to register</p>
                 <form class="form">
-                    <input type="text" placeholder="Name">
-                    <input type="email" placeholder="Email">
-                    <input type="password" placeholder="Password">
-                    <button class="btn">SIGN UP</button>
+                    <label for="">
+                        <i class="far fa-user"></i>
+                    <input type="text" placeholder="Name"></label>
+                    <label for="">
+                        <i class="far fa-envelope"></i>
+                    <input type="email" placeholder="Email"></label>
+                    <label for="">
+                        <i class="fas fa-lock"></i>
+                    <input type="password" placeholder="Password"></label>
+
+                    <button class="btn btn-secondary">SIGN UP</button>
                 </form>
-            </div> <!--end second column-->
-        </div>  <!--end first-container-->
-        <div class="content second-container"> <!-- second content-->
+            </div>
+            <!--end second column-->
+        </div>
+        <!--end first-container-->
+        <div class="content second-container">
+            <!-- second content-->
             <div class="first-column">
                 <h2 class="title">Hello, Friend!</h2>
                 <p class="description">Enter your personal info</p>
@@ -49,7 +62,8 @@
                         <li><a href="#">Google Plus</a></li>
                         <li><a href="#">LinkedIn</a></li>
                     </ul>
-                </div> <!--end social-media-->
+                </div>
+                <!--end social-media-->
                 <p class="description">or use your email account</p>
                 <form class="form">
                     <input type="email" placeholder="Email">
@@ -57,10 +71,16 @@
                     <a href="#">Forgot your password ?</a>
                     <button class="btn">Sign In</button>
                 </form>
-            </div> <!--end second column-->
-        </div>  <!--end first-container-->
+            </div>
+            <!--end second column-->
         </div>
+        <!--end first-container-->
+    </div>
 
     </div>
+
+
+    <script src="https://kit.fontawesome.com/5d878020fc.js" crossorigin="anonymous"></script>
 </body>
+
 </html>
