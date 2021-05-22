@@ -4,6 +4,10 @@ margin:0;
 padding: 0;
 box-sizing: border-box;
 }
+html{
+    margin:0;
+padding: 0;
+}
 body{
     font-family: 'Open Sans', sans-serif;
 }
@@ -12,7 +16,7 @@ body{
     align-items: center;
     border-radius: 15px;
     background-color: #fff;
-    width: 960px;
+    /* width: 960px; */
     height: 65%;
     position: relative;
 }
@@ -114,7 +118,7 @@ body{
 .description-primary{
     color:#fff;
 }
-.description-secondary{
+.description-second{
     color:#7f8c8d;
 }
 .btn{
@@ -299,5 +303,104 @@ z-index: 11;
     to{
         left: 0;
         width: 40%;
+    }
+}
+
+
+@media (max-width:2560px) {
+    .content {
+        height: 30%;
+        width: 30%;
+    }
+    .title-primary{
+        font-size: 2rem;
+    }
+    .second-container .description-primary{
+        font-size: 1rem;
+    }
+    .description-second{
+        font-size: 0.8rem;
+    }    
+}
+@media (max-width:1440px) {
+    .content {
+        height: 60%;
+        width: 60%;
+    }
+    .title-primary{
+        font-size: 1.2rem;
+    }
+    .title-secondary{
+        font-size: 1.2rem;
+    }
+    .second-container .description-primary .description-second{
+        font-size: 0.6rem;
+    }
+}
+@media(max-width:768px){
+    .form{
+        width: 70%;
+    }
+    .second-container .description-primary {
+        font-size: 0.55rem;
+    }
+}
+@media (max-width:426px){
+    .content {
+        height: 60%;
+        width: 100%;
+    }
+    .title-primary{
+        font-size: 1.2rem;
+    }
+    .title-secondary{
+            font-size: 1.2rem;
+        
+    }
+    .description-primary{
+        font-size: 0.6rem;
+    }
+    .description-second{
+        font-size: 0.6rem;
+    }
+    .title-secondary{
+        font-size: 1.2rem;
+    }
+    .form{
+        width: 70%;
+    }
+}
+@media(max-width:376px){
+    .btn{
+        padding: 10px 40px;
+    }
+    .btn-primary{
+        display: inline-block;
+        width: 86%;
+    }
+    .form input{
+        font-size: 0.5rem;
+    }
+}
+@media (max-width:320px){
+    .title-primary{
+        font-size: 0.9rem;
+    }
+    .title-secondary{
+        font-size: 0.9rem;
+    }
+    .description-primary{
+        font-size: 0.6rem;
+        margin:15px;
+    }
+    .description-second{
+        font-size:0.5rem;
+    }
+    .btn{
+        padding: 10px 25px;
+    }
+    .btn-primary{
+        display: inline-block;
+        width: 77%;
     }
 }
