@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/style.css">
     <title>Login</title>
 </head>
 
@@ -22,23 +22,35 @@
                 <h2 class="title title-secondary">Create Account</h2>
                 <div class="social-media">
                     <ul class="list-social-media">
-                        <li class="item-social-media"><a href="#"><i class="fab fa-facebook-f"></i></a></li>
-                        <li class="item-social-media"><a href="#"><i class="fab fa-google-plus-g"></i></a></li>
-                        <li class="item-social-media"><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
+                        <a class="link-social-media" href="#">
+                            <li class="item-social-media">
+                                <i class="fab fa-facebook-f"></i>
+                            </li>
+                        </a>
+                        <a class="link-social-media" href="#">
+                            <li class="item-social-media">
+                                <i class="fab fa-google-plus-g"></i>
+                            </li>
+                        </a>
+                        <a class="link-social-media" href="#">
+                            <li class="item-social-media">
+                                <i class="fab fa-linkedin-in"></i>
+                            </li>
+                        </a>
                     </ul>
                 </div>
                 <!--end social-media-->
                 <p class="description description-second">or use your email to register</p>
                 <form class="form">
-                    <label for="">
-                        <i class="far fa-user"></i>
-                    <input type="text" placeholder="Name"></label>
-                    <label for="">
-                        <i class="far fa-envelope"></i>
-                    <input type="email" placeholder="Email"></label>
-                    <label for="">
-                        <i class="fas fa-lock"></i>
-                    <input type="password" placeholder="Password"></label>
+                    <label class="label-input" for="">
+                        <i class="far fa-user icon-modify"></i>
+                        <input type="text" placeholder="Name"></label>
+                    <label class="label-input" for="">
+                        <i class="far fa-envelope icon-modify"></i>
+                        <input type="email" placeholder="Email"></label>
+                    <label class="label-input" for="">
+                        <i class="fas fa-lock icon-modify"></i>
+                        <input type="password" placeholder="Password"></label>
 
                     <button class="btn btn-secondary">SIGN UP</button>
                 </form>
@@ -49,27 +61,43 @@
         <div class="content second-container">
             <!-- second content-->
             <div class="first-column">
-                <h2 class="title">Hello, Friend!</h2>
-                <p class="description">Enter your personal info</p>
-                <p class="description">and start your journey with us</p>
-                <button class="btn">SIGN UP</button>
+                <h2 class="title title-primary">Hello, Friend!</h2>
+                <p class="description description-primary">Enter your personal info</p>
+                <p class="description description-primary">and start your journey with us</p>
+                <button class="btn btn-primary">SIGN UP</button>
             </div>
             <div class="second-column">
-                <h2 class="title">Sign in to Developer</h2>
+                <h2 class="title title-secondary">Sign in to Developer</h2>
                 <div class="social-media">
-                    <ul>
-                        <li><a href="#">Facebook</a></li>
-                        <li><a href="#">Google Plus</a></li>
-                        <li><a href="#">LinkedIn</a></li>
+                    <ul class="list-social-media">
+                        <a class="link-social-media" href="#">
+                            <li class="item-social-media">
+                                <i class="fab fa-facebook-f"></i>
+                            </li>
+                        </a>
+                        <a class="link-social-media" href="#">
+                            <li class="item-social-media">
+                                <i class="fab fa-google-plus-g"></i>
+                            </li>
+                        </a>
+                        <a class="link-social-media" href="#">
+                            <li class="item-social-media">
+                                <i class="fab fa-linkedin-in"></i>
+                            </li>
+                        </a>
                     </ul>
                 </div>
                 <!--end social-media-->
-                <p class="description">or use your email account</p>
+                <p class="description description-second">or use your email account</p>
                 <form class="form">
-                    <input type="email" placeholder="Email">
-                    <input type="password" placeholder="Password">
-                    <a href="#">Forgot your password ?</a>
-                    <button class="btn">Sign In</button>
+                    <label class="label-input" for="">
+                        <i class="far fa-envelope icon-modify"></i>
+                        <input type="email" placeholder="Email"></label>
+                    <label class="label-input" for="">
+                        <i class="fas fa-lock icon-modify"></i>
+                        <input type="password" placeholder="Password"></label>
+                    <a class="password" href="#">Forgot your password ?</a>
+                    <button class="btn btn-secondary">SIGN IN</button>
                 </form>
             </div>
             <!--end second column-->

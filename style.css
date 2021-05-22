@@ -13,7 +13,7 @@ body{
     border-radius: 15px;
     background-color: #fff;
     width: 960px;
-    height: 50%;
+    height: 65%;
     position: relative;
 }
 .content::before{
@@ -22,6 +22,11 @@ body{
     background-color: #58af9b;
     width: 40%;
     height: 100%;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+
+
+    left:60%;
 }
 .container{
     display: flex;
@@ -31,19 +36,18 @@ body{
     background-color: #ecf0f1;
 }
 .first-container{
-    display: flex;
+    display: none;
 }
 .first-column{
-    
+    width: 40%;
     text-align: center;
-    flex:1 0 auto;
     z-index:10;
 }
 .second-column{
     display: flex;
     flex-direction: column;
     align-items: center;
-    flex:2 0 auto;
+    width: 60%;
 }
 .title-secondary{
     color: #58af9b;
@@ -52,6 +56,14 @@ body{
     display: flex;
     list-style: none;
 }
+.link-social-media:not(:first-child){
+    margin-left: 10px;
+}
+.link-social-media:hover .item-social-media{
+    background-color: #58af9b;
+    color:#fff;
+    border:#58af9b;
+}
 .item-social-media{
     border: 1px solid #bdc3c7;
     border-radius: 50%;
@@ -59,9 +71,11 @@ body{
     height: 35px;
     text-align: center;
     line-height: 35px;
-}
-.item-social-media a{
     color: #95a5a6;
+}
+
+.social-media{
+    margin: 1rem 0;
 }
 .form{
     display: flex;
@@ -70,7 +84,13 @@ body{
 }
 .second-container{
     position: absolute;
-    display: none;
+    display: flex;
+}
+.second-container .first-column{
+    order:2;
+}
+.second-container .second-column{
+    order:1;
 }
 .title {
     font-size: 28px;
@@ -102,6 +122,7 @@ body{
     align-self: center;
     width: 150px;
     border:none;
+    margin: 1rem;
 }
 .btn-secondary{
     background-color:#58af9b;
@@ -124,5 +145,24 @@ color: #58af9b;
 height: 45px;
 border:none;
 background-color: #ecf0f1;
-margin: 8px;
+width: 100%;
+}
+.label-input{
+    display: flex;
+    align-items: center;
+    background-color: #ecf0f1;
+    margin: 8px;
+}
+.icon-modify{
+    color:#7f8c8d;
+    padding: 0 5px;
+}
+.password{
+    color:#34495e;
+    font-size: 14px;
+    margin: 15px 0;
+    text-align: center;
+}
+.password::first-letter{
+    text-transform: capitalize;
 }
