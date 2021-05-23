@@ -54,10 +54,10 @@ let somar = function (valorUsuario, parOuImpar) {
 
     let soma = valorUsuario + random;
     const resultadoTexto = `Resultado: ${soma} <br>`;
-    soma % 2 == 0 && parOuImpar == 'par' ? resultado.innerHTML = `${resultadoTexto} Parabéns, ${soma} é par e você acertou! <br> ` +`${emojiFeliz.innerHTML = '&#128516'} <br>`+ setLink()  :
+    soma % 2 == 0 && parOuImpar == 'par' ? resultado.innerHTML = `${resultadoTexto} Parabéns, ${soma} é par e você acertou! <br> ` +`${emojiFeliz.innerHTML = '&#128516'} <br>` :
         soma % 2 !== 0 && parOuImpar == 'par' ? resultado.innerHTML = `${resultadoTexto} ${soma} É ímpar e você escolheu par, perdeu.<br>`+`${emojiTriste.innerHTML = '&#128557'} <br>` :
             soma % 2 == 0 && parOuImpar == 'impar' ? resultado.innerHTML = `${resultadoTexto} Uma pena, ${soma} é par e você escolheu impar, perdeu.<br>`+`${emojiTriste.innerHTML = '&#128557'}<br>` :
-                soma % 2 !== 0 && parOuImpar == 'impar' ? resultado.innerHTML = `${resultadoTexto} ${soma} É ímpar e você acertou, parabéns!  <br> ` +`${emojiFeliz.innerHTML = '&#128516'} <br> `+ setLink() : console.log('deu erro');
+                soma % 2 !== 0 && parOuImpar == 'impar' ? resultado.innerHTML = `${resultadoTexto} ${soma} É ímpar e você acertou, parabéns!  <br> ` +`${emojiFeliz.innerHTML = '&#128516'} <br> ` : console.log('deu erro');
 }
     //Função para o botão de menos
 function menos() {
