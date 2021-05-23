@@ -161,6 +161,7 @@ height: 45px;
 border:none;
 background-color: #ecf0f1;
 width: 100%;
+outline: none;
 }
 .label-input{
     display: flex;
