@@ -64,7 +64,7 @@ function menos() {
     document.getElementsByClassName('.numEscolhido'); // pega a classe
     const numEscolhidoMenos = document.querySelector('.numEscolhido'); // joga a classe numa variavel
     if (valor <= 0) { // testa
-        alert('O número não pode ser menor que zero'); // alerta o erro
+        alert('Number must be higher than 0'); // alerta o erro
     } else if (valor >= 0) { // testa
         valor--; // executa a funcionalidade do botão
         numEscolhidoMenos.innerHTML = valor; // insere na página o decremento
@@ -79,14 +79,14 @@ function mais() {
         valor++;
         numEscolhidoMais.innerHTML = valor;
     } else if (valor >= 5) {
-        alert('O número não pode ser maior que cinco');
+        alert('Number must be lower than 5');
     }
 }
     //Função que verifica se alguma opção foi escolhida antes de iniciar
 function verificaPar() {
     if (escolheu !== '') {
     } else {
-        alert('Você precisa escolher entre Par, Ímpar ou Aleatório');
+        alert('You must choose between Even, Odd or Random');
         return false;
     }
 }
