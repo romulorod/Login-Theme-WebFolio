@@ -139,7 +139,7 @@ html{
     }
     .container-resultado{
         height: 60%;
-        font-size: small;
+        font-size: large;
     }
     #botaoCV{
         margin-left: 42%;
@@ -154,10 +154,12 @@ html{
     }
     .container-resultado{
         height: 72%;
-        font-size: small;
+        font-size: large;
     }
     #botaoCV{
-        margin-left: 43%;
+        margin-left: 40%;
+        padding:4%;
+        align-items: center;
     }
 }
 @media (max-width:1024px){
@@ -188,6 +190,16 @@ html{
     }
 }
 @media (max-width:426px){
+    .container-resultado{
+        height: 65%;
+        font-size: small;
+    }
+    .usuario{
+        font-size: small !important;
+    }
+    .maquina{
+        font-size: small !important;
+    }
     #botaoCV{
         margin-left: 23%;
     }
@@ -210,11 +222,16 @@ html{
         margin-top: 10px;
     }
     .botoes{
+        margin-top: 3%;
         display: flex;
         flex-wrap: wrap;
     }
+    .botao{
+        width: 50%;
+        height: 80%;
+    }
     #botaoCV{
-        margin-left: 20%;
+        margin-left: 15%;
     }
     .pergunta{
         margin-top: 60%;
@@ -235,7 +252,7 @@ html{
 }
 @media(max-width:320px){
     #botaoCV{
-        margin-left: 10%;
+        margin-left: 15%;
     }
     .pergunta{
         margin-top: 60%;

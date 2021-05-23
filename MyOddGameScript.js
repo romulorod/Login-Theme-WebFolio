@@ -53,11 +53,11 @@ let random = getRandom(0, 6);
 let somar = function (valorUsuario, parOuImpar) {
 
     let soma = valorUsuario + random;
-    const resultadoTexto = `Resultado: ${soma} <br>`;
-    soma % 2 == 0 && parOuImpar == 'par' ? resultado.innerHTML = `${resultadoTexto} Parabéns, ${soma} é par e você acertou! <br> ` +`${emojiFeliz.innerHTML = '&#128516'} <br>` :
-        soma % 2 !== 0 && parOuImpar == 'par' ? resultado.innerHTML = `${resultadoTexto} ${soma} É ímpar e você escolheu par, perdeu.<br>`+`${emojiTriste.innerHTML = '&#128557'} <br>` :
-            soma % 2 == 0 && parOuImpar == 'impar' ? resultado.innerHTML = `${resultadoTexto} Uma pena, ${soma} é par e você escolheu impar, perdeu.<br>`+`${emojiTriste.innerHTML = '&#128557'}<br>` :
-                soma % 2 !== 0 && parOuImpar == 'impar' ? resultado.innerHTML = `${resultadoTexto} ${soma} É ímpar e você acertou, parabéns!  <br> ` +`${emojiFeliz.innerHTML = '&#128516'} <br> ` : console.log('deu erro');
+    const resultadoTexto = `Result: ${soma} <br>`;
+    soma % 2 == 0 && parOuImpar == 'par' ? resultado.innerHTML = `${resultadoTexto} Congratulations!, ${soma} is even and you got it! <br> ` +`${emojiFeliz.innerHTML = '&#128516'} <br>` :
+        soma % 2 !== 0 && parOuImpar == 'par' ? resultado.innerHTML = `${resultadoTexto} ${soma} Is Odd and you chose Even, you lost.<br>`+`${emojiTriste.innerHTML = '&#128557'} <br>` :
+            soma % 2 == 0 && parOuImpar == 'impar' ? resultado.innerHTML = `${resultadoTexto} What a pitty, ${soma} is even and you chose odd, you lost.<br>`+`${emojiTriste.innerHTML = '&#128557'}<br>` :
+                soma % 2 !== 0 && parOuImpar == 'impar' ? resultado.innerHTML = `${resultadoTexto} ${soma} Is odd and you got it right! Congratulations!  <br> ` +`${emojiFeliz.innerHTML = '&#128516'} <br> ` : console.log('Something went wrong');
 }
     //Função para o botão de menos
 function menos() {
@@ -128,19 +128,19 @@ function setLink(){
     //Função que insere no HTML através do JS as informações do resultado do jogo.
 function jogaNoHtml() {
 
-    usuario.innerHTML = `Seu número foi: <br>${valor}<br> Sua escolha foi:<br>`
+    usuario.innerHTML = `Your chosen number was:<br>${valor}<br> Your choice was:<br>`
     if (escolheu == 'impar') {
-        botao.innerHTML = 'Ímpar';
+        botao.innerHTML = 'Odd';
     }
     else if (escolheu == 'par') {
-        botao.innerHTML = 'Par';
+        botao.innerHTML = 'Even';
     } else;
     usuario.appendChild(botao);
-    maquina.innerHTML = `O número da IA foi: <br>${random}<br> Ela escolheu:<br>`
+    maquina.innerHTML = `Your oppnent number was: <br>${random}<br> It chose:<br>`
     if (escolheu == 'par') {
-        botao2.innerHTML = 'Ímpar';
+        botao2.innerHTML = 'Odd';
     } else if (escolheu == 'impar') {
-        botao2.innerHTML = 'Par';
+        botao2.innerHTML = 'Even';
     }
     maquina.appendChild(botao2);
 }
