@@ -26,12 +26,27 @@ html{
     justify-content: space-around;
     margin-top: -8%;
 }
+
+#botaoCV{
+    display: none;
+    justify-content: center;
+    margin-top: 5%;
+    text-align: center;
+    cursor: pointer;
+    margin-left: 40%;
+    width: 80px;
+    height: 20px;
+    background-color: #3c7e6f;
+    border: none;
+    border-radius: 8px;
+}
 .botao{
     width: 70px;
     height: 30px;
     background-color: #3c7e6f;
     border: none;
     border-radius: 8px;
+    text-align: center;
 }
 .usuario{
     display: block;
@@ -49,7 +64,7 @@ html{
 .impar,.par,.aleatorio{
     width: 70px;
     height: 30px;
-    margin-top: 15%;
+    margin-top: 10%;
     background-color: #3c7e6f;
     border: none;
     border-radius: 8px;
@@ -116,16 +131,34 @@ html{
     font-size:50px;
 }
 
-@media (max-width:1440px) {
+@media (min-width:1024px) and (max-width:1440px) {
     body{
-        height: 70%;
+        height: 80%;
     }
     .cardConstruir{
-        height: 65%;
+        height: 72%;
     }
     .container-resultado{
-        height: 65%;
+        height: 72%;
         font-size: small;
+    }
+    #botaoCV{
+        margin-left: 43%;
+    }
+}
+@media (max-width:1024px){
+    body{
+        height: 90%;
+    }
+    .cardConstruir{
+        height: 72%;
+    }
+    .container-resultado{
+        height: 72%;
+        font-size: small;
+    }
+    #botaoCV{
+        margin-left: 40%;
     }
 }
 @media (max-width:768px){
@@ -138,6 +171,9 @@ html{
     }
 }
 @media (max-width:426px){
+    #botaoCV{
+        margin-left: 28%;
+    }
     .botoes{
         display: flex;
         flex-wrap: wrap;
@@ -152,17 +188,40 @@ html{
         margin: 5px;
     }
 }
-@media (max-width:376px){
-    .numero{
-       width: 70%;
+@media (min-width:320px) and (max-width:376px){
+    .aleatorio{
+        margin-top: 10px;
     }
-}
-@media(max-width:320px){
+    .botoes{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    #botaoCV{
+        margin-left: 20%;
+    }
     .pergunta{
         margin-top: 60%;
     }
-    .impar{
-        margin-top: 10px;
+    .numero{
+        width: 90%;
+        margin:15px auto;
+    }
+    .usuario, .maquina{
+        font-size: 0.9rem !important;
+    }
+    .resultado{
+        margin-top: 5%;
+    }
+    .jogar{
+        padding:4%;
+    }
+}
+@media(max-width:320px){
+    #botaoCV{
+        margin-left: 20%;
+    }
+    .pergunta{
+        margin-top: 60%;
     }
     .numero{
         width: 90%;

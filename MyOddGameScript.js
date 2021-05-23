@@ -40,6 +40,7 @@ maquina.style.fontSize = "large"; //Estilização via JS
 const resultado = document.querySelector('.resultado'); // Atribuir classe à variável
 const emojiFeliz = document.createElement('p');
 const emojiTriste = document.createElement('p2')
+
 //Funções
     //Função que gera numero Randômico
 function getRandom(min, max) {
@@ -53,10 +54,10 @@ let somar = function (valorUsuario, parOuImpar) {
 
     let soma = valorUsuario + random;
     const resultadoTexto = `Resultado: ${soma} <br>`;
-    soma % 2 == 0 && parOuImpar == 'par' ? resultado.innerHTML = `${resultadoTexto} Parabéns, ${soma} é par e você acertou! <br> ` +`${emojiFeliz.innerHTML = '&#128516'}` :
-        soma % 2 !== 0 && parOuImpar == 'par' ? resultado.innerHTML = `${resultadoTexto} ${soma} É ímpar e você escolheu par, perdeu.<br>`+`${emojiTriste.innerHTML = '&#128557'}` :
-            soma % 2 == 0 && parOuImpar == 'impar' ? resultado.innerHTML = `${resultadoTexto} Uma pena, ${soma} é par e você escolheu impar, perdeu.<br>`+`${emojiTriste.innerHTML = '&#128557'}` :
-                soma % 2 !== 0 && parOuImpar == 'impar' ? resultado.innerHTML = `${resultadoTexto} ${soma} É ímpar e você acertou, parabéns!  <br> ` +`${emojiFeliz.innerHTML = '&#128516'}` : console.log('deu erro');
+    soma % 2 == 0 && parOuImpar == 'par' ? resultado.innerHTML = `${resultadoTexto} Parabéns, ${soma} é par e você acertou! <br> ` +`${emojiFeliz.innerHTML = '&#128516'} <br>`+ setLink()  :
+        soma % 2 !== 0 && parOuImpar == 'par' ? resultado.innerHTML = `${resultadoTexto} ${soma} É ímpar e você escolheu par, perdeu.<br>`+`${emojiTriste.innerHTML = '&#128557'} <br>` :
+            soma % 2 == 0 && parOuImpar == 'impar' ? resultado.innerHTML = `${resultadoTexto} Uma pena, ${soma} é par e você escolheu impar, perdeu.<br>`+`${emojiTriste.innerHTML = '&#128557'}<br>` :
+                soma % 2 !== 0 && parOuImpar == 'impar' ? resultado.innerHTML = `${resultadoTexto} ${soma} É ímpar e você acertou, parabéns!  <br> ` +`${emojiFeliz.innerHTML = '&#128516'} <br> `+ setLink() : console.log('deu erro');
 }
     //Função para o botão de menos
 function menos() {
@@ -119,7 +120,10 @@ function limpaValor() {
 }
 
 impaPar();
-
+function setLink(){
+    const link = document.getElementById('botaoCV')
+    link.style.display = "flex";
+}
 
     //Função que insere no HTML através do JS as informações do resultado do jogo.
 function jogaNoHtml() {
@@ -143,6 +147,7 @@ function jogaNoHtml() {
     //Função geral que recebe o click no botão Jogar e executa as funções cadeadamente para que tudo performe dentro do esperado.
 jogar.addEventListener('click', function () {
     if (verificaPar()==false) return;
+    setLink();
     somar(valor, escolheu);
     jogaNoHtml();
     limpaValor();
