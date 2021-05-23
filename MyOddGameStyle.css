@@ -112,11 +112,20 @@ html{
     text-align: center;
     border-radius: 15px;
 }
-
+.pow{
+    font-size:50px;
+}
 
 @media (max-width:1440px) {
     body{
         height: 70%;
+    }
+    .cardConstruir{
+        height: 65%;
+    }
+    .container-resultado{
+        height: 65%;
+        font-size: small;
     }
 }
 @media (max-width:768px){
