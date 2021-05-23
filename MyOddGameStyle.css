@@ -1,0 +1,171 @@
+*{
+margin:0;
+padding:0;
+}
+body{
+    /* background-image: linear-gradient(#D95F69,#F29544,#F2E18D,#BFB99B); */
+    display: flex;
+    justify-content: space-around;
+    height: 100vh;
+}
+html{
+    height: 100vh;
+}
+.cardConstruir{
+    display: inline-block;
+    margin-top: 10%;
+    background-color: #58af9b;
+    width: 40%; 
+    height: 50%;
+    border-radius: 15px;
+}
+.botoes{
+    display: flex;
+    height:25%;
+    max-width: 100%;
+    justify-content: space-around;
+    margin-top: -8%;
+}
+.botao{
+    width: 70px;
+    height: 30px;
+    background-color: #3c7e6f;
+    border: none;
+    border-radius: 8px;
+}
+.usuario{
+    display: block;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1rem;
+    padding: 10px;
+    margin-top: 3%;
+}
+.resultado{
+    margin-top: 2%;
+    line-height: 150%;
+}
+
+.impar,.par,.aleatorio{
+    width: 70px;
+    height: 30px;
+    margin-top: 15%;
+    background-color: #3c7e6f;
+    border: none;
+    border-radius: 8px;
+}
+.impar:hover, .par:hover, .aleatorio:hover{
+    background-color: #ff6347;
+}
+.pergunta{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 15%;
+}
+.pergunta p{
+    font-size: 10px;
+}
+.numero{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 15%;
+    width: 50%;
+    margin: 1.6rem auto;
+}
+.menos, .mais{
+    background-color: #af586c;
+    border: none;
+    border-radius: 8px;
+    padding: 5px 10px;
+}
+.menos:active, .mais:active{
+    background-color: #ff6347;
+}
+.numEscolhido{
+    padding:10px 15px;
+    border-radius: 30px;
+    background-color: #F2E18D;
+}
+.jogar{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 20%;
+    background-color: #af586c;
+    border-radius: 5px;
+    color:white;
+    border: none;
+    margin: 0 auto;
+    padding: 3%;
+}
+.container-resultado{
+    display: inline-block;
+    justify-content: center; 
+    align-items: center; 
+    margin-top: 10%;
+    width: 40%; 
+    height: 50%;
+    background-color:#58af9b;
+    text-align: center;
+    border-radius: 15px;
+}
+
+
+@media (max-width:1440px) {
+    body{
+        height: 70%;
+    }
+}
+@media (max-width:768px){
+    .cardConstruir{
+        height: 65%;
+    }
+    .container-resultado{
+        height: 65%;
+        font-size: small;
+    }
+}
+@media (max-width:426px){
+    .botoes{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .aleatorio{
+        margin-top: 10px;
+    }
+    .numero{
+        width: 80%;
+    }
+    .menos, .mais{
+        margin: 5px;
+    }
+}
+@media (max-width:376px){
+    .numero{
+       width: 70%;
+    }
+}
+@media(max-width:320px){
+    .pergunta{
+        margin-top: 60%;
+    }
+    .impar{
+        margin-top: 10px;
+    }
+    .numero{
+        width: 90%;
+        margin:15px auto;
+    }
+    .usuario, .maquina{
+        font-size: 0.9rem !important;
+    }
+    .resultado{
+        margin-top: 5%;
+    }
+    .jogar{
+        padding:4%;
+    }
+}

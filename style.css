@@ -5,8 +5,9 @@ padding: 0;
 box-sizing: border-box;
 }
 html{
-    margin:0;
-padding: 0;
+    margin: 0;
+    padding: 0;
+    width: 100%;
 }
 body{
     font-family: 'Open Sans', sans-serif;
@@ -138,6 +139,8 @@ body{
     background-color:#58af9b;
     border:1px solid #fff;
     transition: background-color .5s;
+    text-align: center;
+    text-decoration: none;
 }
 .btn:hover{
     border:1px solid #58af9b;
@@ -309,8 +312,8 @@ z-index: 11;
 
 @media (max-width:2560px) {
     .content {
-        height: 30%;
-        width: 30%;
+        height: 90%;
+        width: 90%;
     }
     .title-primary{
         font-size: 2rem;
@@ -369,10 +372,16 @@ z-index: 11;
     .form{
         width: 70%;
     }
+    .btn-primary{
+        width: 85%;
+    }
 }
 @media(max-width:376px){
     .btn{
         padding: 10px 40px;
+    }
+    .content{
+        width:95%
     }
     .btn-primary{
         display: inline-block;

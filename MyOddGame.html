@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="MyOddGameStyle.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="cardConstruir">
+        <div class="botoes">
+            <button class="par"> Par </button>
+            <button class="impar"> Ímpar </button>
+            <button class="aleatorio"> Aleatório </button>
+        </div>
+        <div class="pergunta">Qual sua jogada ?
+            <br>
+            <p>(Escolha entre 0 e 5)</p>
+        </div>
+        <div class="numero">
+            <button class="menos">-</button>
+            <div id="porra" class="numEscolhido">0</div>
+            <button class="mais">+</button>
+        </div>
+        <div class="jogar">
+            <button class="jogar">Jogar</button>
+        </div>
+    </div>
+    <div id="container2" class="container-resultado">
+        <div class="usuario">
+        </div>
+        <div class="maquina">
+        </div>
+        <div class="resultado confete"></div>
+    </div>
+    <script src="MyOddGameScript.js"></script>
+</body>
+
+</html>
