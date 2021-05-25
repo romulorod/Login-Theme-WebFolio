@@ -166,7 +166,7 @@ outline: none;
 .label-input{
     display: flex;
     align-items: center;
-    background-color: #ecf0f1;
+    background-color: #9a9a9a;
     margin: 8px;
 }
 .icon-modify{
